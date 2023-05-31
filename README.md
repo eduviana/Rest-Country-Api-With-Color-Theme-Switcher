@@ -40,7 +40,6 @@ Users should be able to:
 - Solution URL: (https://github.com/eduviana/Rest-Country-Api-With-Color-Theme-Switcher)
 - Live Site URL: (https://rest-country-api-with-color-theme-switcher-fupf6x4t2-eduviana.vercel.app/)
 
-## My process
 
 ### Built with
 
