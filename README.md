@@ -30,8 +30,8 @@ Users should be able to:
 
 ![](./desktop-home.png) <br />
 ![](./desktop-details.png) <br />
-![](./mobile-home.png) <br />
-![](./mobile-details.png)
+![](./mobile-home.png) ![](./mobile-details.png)
+
 
 
 
