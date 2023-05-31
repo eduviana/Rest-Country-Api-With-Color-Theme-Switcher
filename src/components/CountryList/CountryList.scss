@@ -1,0 +1,30 @@
+.countryList {
+  margin: 1rem auto;
+
+  .container {
+    width: 280px;
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .countryList {
+    margin: 1rem auto;
+  
+    .container {
+      width: 1270px;
+  
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4rem;
+      }
+    }
+  }
+}

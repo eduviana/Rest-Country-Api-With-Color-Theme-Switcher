@@ -1,0 +1,51 @@
+@import "../../mixins.scss";
+
+a {
+  text-decoration: none;
+
+  .country {
+    @include flex(column, nowrap, space-between, start);
+    background-color: var(--bg-input);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+   
+    margin: 0 auto;
+
+    .flag {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .information {
+      padding: 1rem 1.5rem;
+      font-size: var(--homepage-item);
+
+      .name {
+        color: var(--text-color);
+        font-weight: 800;
+        margin: 1rem 0
+      }
+
+      .details {
+        @include flex(column, nowrap, start, start);
+        color: var(--text-color);
+        .detail {
+          @include flex(row, nowrap, start, center);
+          gap: 0.3rem;
+
+          h4 {
+            font-weight: 800;
+            margin: 0.2rem;
+          }
+
+          span {
+            color: var(--text-color);
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

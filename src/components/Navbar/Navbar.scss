@@ -1,0 +1,46 @@
+@import "../../mixins.scss";
+
+.navbar {
+  background-color: var(--bg-input);
+  padding: var(--padding);
+  
+
+  .flex {
+    @include flex(row, nowrap, space-between, center);
+    .title {
+      width: max-content;
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+
+    .darkMode {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .icon {
+        font-size: 1.5rem;
+        transform: rotate(140deg);
+        color: var(--text-color);
+      }
+
+      .text {
+        font-weight: 600;
+        color: var(--text-color);
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    .flex{
+      .title {
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin: .6rem 0;
+      }
+    }
+  }
+}

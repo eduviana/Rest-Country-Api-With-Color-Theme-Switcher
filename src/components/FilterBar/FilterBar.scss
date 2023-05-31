@@ -1,0 +1,97 @@
+@import "../../mixins.scss";
+
+.filterBar {
+  padding: var(--padding);
+
+  .flex {
+    @include flex(column, nowrap, start, start);
+    gap: 2.5rem;
+    .input {
+      @include flex(row, nowrap, start, center);
+      width: 100%;
+      padding: 1rem 2rem;
+      gap: 1.5rem;
+      background-color: var(--bg-input);
+      height: 51px;
+      border-radius: .3rem;
+
+      .icon-search {
+        width: 22px;
+        height: 22px;
+        color: var(--text-color);
+        opacity: 0.7;
+      }
+
+      .search {
+        border: none;
+        background-color: var(--bg-input);
+        font-size: .9rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: var(--text-color);
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .filters {
+      width: 64%;
+      height: 51px;
+      
+    }
+
+    .filter-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      
+    }
+
+    .filter {
+      width: 100%;
+      padding: 1rem 2rem;
+      border: none;
+      color: var(--text-color);
+      background-color: var(--bg-input);
+      appearance: none;
+      font-weight: 600;
+      font-size: .9rem;
+      border-radius: .3rem;
+      option {
+        font-weight: 600;
+      }
+    }
+
+    .filter-icon {
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 14px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .filterBar {
+    @include flex(row, nowrap, space-between, center);
+
+    .flex {
+      @include flex(row, nowrap, space-between, center);
+      margin: 1.5rem 0;
+
+      .input {
+        width: 36%;
+      }
+
+      .filters{
+        width: 18%;
+      }
+    }
+  }
+}
